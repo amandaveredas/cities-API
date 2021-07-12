@@ -1,11 +1,20 @@
 package com.github.amandaveredas.cittiesapi.citties;
 
-import com.github.amandaveredas.cittiesapi.states.State;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import org.hibernate.annotations.Type;
+import org.hibernate.annotations.TypeDef;
+import org.hibernate.annotations.TypeDefs;
+import org.springframework.data.geo.Point;
 
-import javax.persistence.*;
 
 @Entity
 @Table(name = "cidade")
+@TypeDefs(value = {
+        @TypeDef(name = "point", typeClass = PointType.class)
+})
 public class City {
 
     @Id
@@ -14,32 +23,21 @@ public class City {
     @Column(name = "nome")
     private String name;
 
-    @ManyToOne
-    @JoinColumn(name = "uf", referencedColumnName = "id")
-    private State state;
+    private Integer uf;
 
     private Integer ibge;
 
+    // 1st
     @Column(name = "lat_lon")
-    private String geoLocation;
+    private String geolocation;
 
-//    private Long latitude;
-//
-//    private Long longitude;
-//
-//    private Integer cod_tom;
-
+    // 2nd
+    @Type(type = "point")
+    @Column(name = "lat_lon", updatable = false, insertable = false)
+    private Point location;
 
     public City() {
     }
-
-//    public City(Long id, String name, Integer uf, Integer ibge, String geoLocation) {
-//        this.id = id;
-//        this.name = name;
-//        this.uf = uf;
-//        this.ibge = ibge;
-//        this.geoLocation = geoLocation;
-//    }
 
     public Long getId() {
         return id;
@@ -49,15 +47,19 @@ public class City {
         return name;
     }
 
+    public Integer getUf() {
+        return uf;
+    }
+
     public Integer getIbge() {
         return ibge;
     }
 
-    public String getGeoLocation() {
-        return geoLocation;
+    public String getGeolocation() {
+        return geolocation;
     }
 
-    public State getState() {
-        return state;
+    public Point getLocation() {
+        return location;
     }
 }
