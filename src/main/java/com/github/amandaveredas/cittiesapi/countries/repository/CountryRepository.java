@@ -1,4 +1,4 @@
-package com.github.amandaveredas.cittiesapi.repository;
+package com.github.amandaveredas.cittiesapi.countries.repository;
 
 import com.github.amandaveredas.cittiesapi.countries.Country;
 import org.springframework.data.jpa.repository.JpaRepository;
