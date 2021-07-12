@@ -1,5 +1,7 @@
 package com.github.amandaveredas.cittiesapi.citties;
 
+import com.github.amandaveredas.cittiesapi.states.State;
+
 import javax.persistence.*;
 
 @Entity
@@ -12,7 +14,9 @@ public class City {
     @Column(name = "nome")
     private String name;
 
-    private Integer uf;
+    @ManyToOne
+    @JoinColumn(name = "uf", referencedColumnName = "id")
+    private State state;
 
     private Integer ibge;
 
@@ -45,15 +49,15 @@ public class City {
         return name;
     }
 
-    public Integer getUf() {
-        return uf;
-    }
-
     public Integer getIbge() {
         return ibge;
     }
 
     public String getGeoLocation() {
         return geoLocation;
+    }
+
+    public State getState() {
+        return state;
     }
 }
