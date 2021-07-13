@@ -1,7 +1,6 @@
-package com.github.amandaveredas.cittiesapi.countries;
+package com.github.amandaveredas.citiesapi.countries;
 
-import com.github.amandaveredas.cittiesapi.countries.Country;
-import com.github.amandaveredas.cittiesapi.countries.repository.CountryRepository;
+import com.github.amandaveredas.citiesapi.countries.repository.CountryRepository;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;

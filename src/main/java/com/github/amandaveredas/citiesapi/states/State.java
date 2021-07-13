@@ -1,6 +1,6 @@
-package com.github.amandaveredas.cittiesapi.states;
+package com.github.amandaveredas.citiesapi.states;
 
-import com.github.amandaveredas.cittiesapi.countries.Country;
+import com.github.amandaveredas.citiesapi.countries.Country;
 import com.vladmihalcea.hibernate.type.json.JsonBinaryType;
 import org.hibernate.annotations.Type;
 import org.hibernate.annotations.TypeDef;

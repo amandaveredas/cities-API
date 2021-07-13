@@ -1,6 +1,6 @@
-package com.github.amandaveredas.cittiesapi.distances;
+package com.github.amandaveredas.citiesapi.distances;
 
-import com.github.amandaveredas.cittiesapi.distances.services.DistanceService;
+import com.github.amandaveredas.citiesapi.distances.services.DistanceService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;

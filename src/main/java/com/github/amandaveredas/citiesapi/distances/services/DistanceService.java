@@ -1,10 +1,10 @@
-package com.github.amandaveredas.cittiesapi.distances.services;
+package com.github.amandaveredas.citiesapi.distances.services;
 
 import java.util.Arrays;
 import java.util.List;
 
-import com.github.amandaveredas.cittiesapi.citties.City;
-import com.github.amandaveredas.cittiesapi.citties.repository.CityRepository;
+import com.github.amandaveredas.citiesapi.cities.City;
+import com.github.amandaveredas.citiesapi.cities.repository.CityRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.data.geo.Point;

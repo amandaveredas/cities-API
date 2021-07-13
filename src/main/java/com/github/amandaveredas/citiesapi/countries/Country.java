@@ -1,4 +1,4 @@
-package com.github.amandaveredas.cittiesapi.countries;
+package com.github.amandaveredas.citiesapi.countries;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

@@ -1,6 +1,6 @@
-package com.github.amandaveredas.cittiesapi.countries.repository;
+package com.github.amandaveredas.citiesapi.countries.repository;
 
-import com.github.amandaveredas.cittiesapi.countries.Country;
+import com.github.amandaveredas.citiesapi.countries.Country;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface CountryRepository extends JpaRepository<Country, Long> {

@@ -1,4 +1,4 @@
-package com.github.amandaveredas.cittiesapi.states;
+package com.github.amandaveredas.citiesapi.states;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

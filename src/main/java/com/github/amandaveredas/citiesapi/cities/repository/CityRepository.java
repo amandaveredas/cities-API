@@ -1,6 +1,6 @@
-package com.github.amandaveredas.cittiesapi.citties.repository;
+package com.github.amandaveredas.citiesapi.cities.repository;
 
-import com.github.amandaveredas.cittiesapi.citties.City;
+import com.github.amandaveredas.citiesapi.cities.City;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 

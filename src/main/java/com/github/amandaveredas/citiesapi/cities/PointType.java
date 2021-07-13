@@ -1,4 +1,4 @@
-package com.github.amandaveredas.cittiesapi.citties;
+package com.github.amandaveredas.citiesapi.cities;
 
 import org.hibernate.HibernateException;
 import org.hibernate.engine.spi.SharedSessionContractImplementor;

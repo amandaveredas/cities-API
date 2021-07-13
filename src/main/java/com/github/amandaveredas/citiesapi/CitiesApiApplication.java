@@ -1,13 +1,13 @@
-package com.github.amandaveredas.cittiesapi;
+package com.github.amandaveredas.citiesapi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CittiesApiApplication {
+public class CitiesApiApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CittiesApiApplication.class, args);
+		SpringApplication.run(CitiesApiApplication.class, args);
 	}
 
 

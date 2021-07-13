@@ -1,16 +1,14 @@
-package com.github.amandaveredas.cittiesapi.citties;
+package com.github.amandaveredas.citiesapi.cities;
 
-import com.github.amandaveredas.cittiesapi.citties.repository.CityRepository;
+import com.github.amandaveredas.citiesapi.cities.repository.CityRepository;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
-
 @RestController
-@RequestMapping("/citties")
+@RequestMapping("/cities")
 public class CityRessource {
 
     private final CityRepository repository;
